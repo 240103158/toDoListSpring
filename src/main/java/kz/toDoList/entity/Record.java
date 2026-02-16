@@ -11,8 +11,6 @@ import jakarta.persistence.Table;
 @Table(name = "records")
 public class Record {
 
-
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;

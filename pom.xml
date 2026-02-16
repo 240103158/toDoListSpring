@@ -26,6 +26,8 @@
     <postgresql.version>42.6.0</postgresql.version>
     <hibernate.version>6.5.2.Final</hibernate.version>
 
+    <dbcp.version>2.9.0</dbcp.version>
+
     <!-- ВАЖНО: 3.1.x, чтобы не ловить NoSuchMethodError -->
     <jakarta.persistence.version>3.1.0</jakarta.persistence.version>
     <jakarta.transaction.version>2.0.1</jakarta.transaction.version>
@@ -53,6 +55,14 @@
       <groupId>org.springframework</groupId>
       <artifactId>spring-orm</artifactId>
       <version>${spring.version}</version>
+    </dependency>
+
+    <!-- Connection pool -->
+    <dependency>
+      <groupId>org.apache.commons</groupId>
+      <artifactId>commons-dbcp2</artifactId>
+      <version>${dbcp.version}</version>
+      <scope>compile</scope>
     </dependency>
 
     <!-- Hibernate -->
